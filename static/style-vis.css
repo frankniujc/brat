@@ -58,7 +58,8 @@ svg.reselect {
 
 /* "basic" font */
 text {
-  font-size: 13px;
+  /*font-size: 13px;*/
+  font-size: 30px;
   font-family: 'Liberation Sans', Verdana, Arial, Helvetica, sans-serif;
 }
 

@@ -520,7 +520,8 @@ def __read_term_hierarchy(input, section=None):
 
         # depth in the ontology corresponds to the number of
         # spaces in the initial indent.
-        depth = len(indent)
+        indent = indent.replace('\t', '    ')
+        depth = len(indent) / 4
 
         # expand <INHERIT> into parent arguments
         expanded_args = []
