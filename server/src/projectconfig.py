@@ -1140,7 +1140,7 @@ def options_get_tokenization(directory):
 
 def options_get_ssplitter(directory):
     v = get_option_config_by_storage_form(directory, 'Sentences')
-    return 'regex' if v is None else v.get('splitter', 'regex')
+    return 'newline' if v is None else v.get('splitter', 'newline')
 
 
 def options_get_annlogfile(directory):

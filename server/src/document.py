@@ -711,6 +711,8 @@ def _enrich_json_with_text(j_dic, txt_file_path, raw_text=None):
     j_dic['token_offsets'] = [o for o in tok_offset_gen(text)]
 
     ssplitter = options_get_ssplitter(dirname(txt_file_path))
+    ssplitter = 'newline'
+
     if ssplitter == 'newline':
         from ssplit import newline_sentence_boundary_gen
         ss_offset_gen = newline_sentence_boundary_gen
