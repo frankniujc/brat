@@ -113,7 +113,7 @@ class Messager:
     __output_json = staticmethod(__output_json)
 
     def __escape(msg):
-        from cgi import escape
+        from html import escape
         return escape(msg).replace('\n', '\n<br/>\n')
     __escape = staticmethod(__escape)
 
